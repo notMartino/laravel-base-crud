@@ -1,1 +1,56 @@
-//
+// Proprietà generali
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+@mixin centering($paddingTop, $paddingBottom) {
+    padding: $paddingTop 10% $paddingBottom;
+}
+
+// Proprietà header
+header{
+    @include centering(20px, 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color:darkorange;
+    border-bottom: 1px solid crimson;
+    #logo{
+        color: crimson;
+        font-size: 30px;
+    }
+    #guestBtn{
+        background-color: dodgerblue;
+        font-size: 25px;
+        color: yellow;
+        padding: 3px;
+        border-radius: 10px;
+        border: 1px solid crimson
+    }
+}
+
+main{
+    @include centering(20px, 20px);
+    background-color: dodgerblue;
+    min-height: calc(100vh - 100px);
+
+    h2{
+        color:yellow;
+    }
+    .guests-list{
+        font-size: 20px;
+        li{
+            a{
+                color:blue;
+            }
+        }
+    }
+}

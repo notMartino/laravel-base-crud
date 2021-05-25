@@ -13,4 +13,11 @@ class GuestController extends Controller
 
         return view('pages.index', compact('guests'));
     }
+
+    public function guestView($id){
+        $guest = Guest::findOrFail($id);
+
+        return view('pages.guest', compact('guest'));
+    }
+
 }

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 20px 10% 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: darkorange;
+  border-bottom: 1px solid crimson;
+}
+
+header #logo {
+  color: crimson;
+  font-size: 30px;
+}
+
+header #guestBtn {
+  background-color: dodgerblue;
+  font-size: 25px;
+  color: yellow;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid crimson;
+}
+
+main {
+  padding: 20px 10% 20px;
+  background-color: dodgerblue;
+  min-height: calc(100vh - 100px);
+}
+
+main h2 {
+  color: yellow;
+}
+
+main .guests-list {
+  font-size: 20px;
+}
+
+main .guests-list li a {
+  color: blue;
+}
+
